@@ -1,0 +1,36 @@
+services:
+
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: retrievallab-db
+
+    environment:
+      POSTGRES_DB: retrievallab
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - retrievallab_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build: .
+    container_name: retrievallab-api
+
+    depends_on:
+      - db
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+    
+    environment:
+      DATABASE_HOST: db
+
+volumes:
+  retrievallab_data:

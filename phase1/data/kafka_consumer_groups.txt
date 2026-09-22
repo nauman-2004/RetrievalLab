@@ -1,0 +1,5 @@
+Apache Kafka uses consumer groups to allow multiple consumers to process messages from topics efficiently. Each consumer group shares the workload by dividing topic partitions among its members, enabling scalable and fault-tolerant message processing. Consumer groups also keep track of offsets, ensuring that messages are processed in the correct order.
+
+This file contains information about Kafka consumer groups in the cluster. It may include consumer group names, subscribed topics, partition assignments, current offsets, log end offsets, and consumer lag. These metrics provide insight into the performance and health of message consumption.
+
+Monitoring consumer groups is essential for maintaining reliable data pipelines. Large consumer lag may indicate slow processing, overloaded consumers, or system issues that require attention. Regular analysis of consumer group information helps optimize throughput, balance workloads, and ensure timely message processing.

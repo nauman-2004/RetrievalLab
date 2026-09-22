@@ -1,0 +1,5 @@
+Redis is an in-memory data store commonly used as a caching solution to improve application performance. By storing frequently accessed data in memory, Redis reduces the need for repeated database queries, resulting in faster response times and lower database workload.
+
+This file contains information related to Redis caching, such as cache statistics, memory usage, key counts, expiration settings, cache hit and miss ratios, or active cache entries. These metrics provide insight into the effectiveness and health of the caching layer.
+
+Monitoring Redis caching performance is essential for maintaining responsive applications. High cache hit rates indicate efficient caching, while frequent cache misses may suggest the need to adjust cache policies or expiration settings. Regular review of Redis metrics helps optimize resource utilization, improve application scalability, and maintain consistent performance.

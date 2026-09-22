@@ -1,0 +1,5 @@
+Docker containers are lightweight, isolated environments that package an application along with its dependencies. They allow software to run consistently across different systems without requiring manual installation of libraries or configurations. Containers are created from Docker images and can be started, stopped, or removed as needed.
+
+This file documents the Docker containers currently running or available on the system. It may include information such as container names, container IDs, image names, status, exposed ports, and uptime. These details help administrators quickly identify services and monitor their operational state.
+
+Maintaining an inventory of Docker containers is useful for troubleshooting, resource management, and deployment verification. By reviewing this information, administrators can ensure that required services are active, detect stopped or unhealthy containers, and simplify maintenance tasks within containerized environments.

@@ -1,0 +1,5 @@
+Indexes in PostgreSQL are specialized database structures designed to improve query performance by allowing the database to locate rows more efficiently. Instead of scanning an entire table, PostgreSQL can use indexes to quickly retrieve matching records, significantly reducing query execution time for large datasets.
+
+This file documents the indexes defined within the PostgreSQL database. It may include index names, associated tables, indexed columns, index types, and uniqueness constraints. These details help database administrators understand how queries are optimized and identify opportunities for performance improvements.
+
+Proper index management is important because while indexes improve read performance, they also consume storage space and increase the cost of write operations such as INSERT, UPDATE, and DELETE. Reviewing existing indexes helps identify redundant or unused indexes and ensures that the database remains efficient and well-optimized.

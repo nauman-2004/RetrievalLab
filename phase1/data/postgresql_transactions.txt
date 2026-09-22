@@ -1,0 +1,5 @@
+Transactions in PostgreSQL ensure that a sequence of database operations is executed as a single logical unit. They follow the ACID principles—Atomicity, Consistency, Isolation, and Durability—to maintain data integrity even in the event of errors or system failures.
+
+This file contains information about PostgreSQL transactions, which may include transaction IDs, session details, transaction states, start times, locks, and active queries. Such information is valuable for monitoring database activity and identifying transactions that may be blocking other operations.
+
+Analyzing transaction data helps administrators detect long-running transactions, deadlocks, or lock contention that can negatively impact database performance. Regular monitoring ensures efficient concurrency management, minimizes resource conflicts, and supports the stable operation of the database system.
