@@ -13,5 +13,6 @@ DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
 
 EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
+OLLAMA_HOST = os.getenv("OLLAMA_HOST")
 
 embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)

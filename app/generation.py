@@ -1,5 +1,5 @@
-from ollama import chat
-from app.config import OLLAMA_MODEL
+from ollama import chat, Client
+from app.config import OLLAMA_MODEL, OLLAMA_HOST
 
 from app.db import (
     insert_query,
@@ -8,6 +8,7 @@ from app.db import (
 
 from app.retrieval import retrieve_chunks
 
+client = Client(host=OLLAMA_HOST)
 
 def construct_context(results):
     context = ""
@@ -44,7 +45,7 @@ Answer:
 
 
 def generate_answer(prompt):
-    response = chat(
+    response = client.chat(
         model=OLLAMA_MODEL,
         messages=[
             {

@@ -14,6 +14,15 @@ app = FastAPI(
     version="0.1.0",
 )
 
+@app.get("/")
+def root():
+    return {
+        "project": "RetrievalLab",
+        "version": "0.1.0",
+        "docs": "/docs",
+        "status": "running"
+    }
+
 @app.get("/health")
 def health():
     return {
