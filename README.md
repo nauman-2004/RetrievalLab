@@ -1,6 +1,16 @@
 # RetrievalLab
 
-**Production-oriented semantic retrieval and Retrieval-Augmented Generation (RAG) backend** for technical documentation, built with **FastAPI**, **PostgreSQL**, **pgvector**, **Sentence Transformers**, and **Ollama**.
+> Production-oriented semantic retrieval and Retrieval-Augmented Generation (RAG) backend for technical documentation.
+
+RetrievalLab ingests technical documents, converts them into semantic vector embeddings using Sentence Transformers, stores them in PostgreSQL with pgvector, and answers user questions through Retrieval-Augmented Generation (RAG) using Ollama.
+
+Built with **FastAPI**, **PostgreSQL**, **pgvector**, **Sentence Transformers**, **Ollama**, and **Docker**.
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.141-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
@@ -14,16 +24,16 @@ Unlike a traditional chatbot, RetrievalLab retrieves relevant document chunks be
 
 ## Features
 
-- Semantic document retrieval using pgvector
-- PostgreSQL-backed vector database
-- Automatic document chunking
-- SentenceTransformer embeddings
-- Local LLM inference with Ollama
-- FastAPI REST API
-- Persistent query history
-- Source attribution
-- Dockerized PostgreSQL
-- Automatic database initialization
+- ✅ Document ingestion
+- ✅ Automatic document chunking
+- ✅ Semantic embeddings using Sentence Transformers
+- ✅ PostgreSQL + pgvector vector storage
+- ✅ Vector similarity search
+- ✅ FastAPI REST API
+- ✅ Dockerized PostgreSQL
+- ✅ Local LLM inference with Ollama
+- ✅ Source attribution
+- ✅ Persistent query history
 
 ---
 

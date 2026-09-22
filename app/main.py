@@ -9,7 +9,8 @@ from app.ingestion import ingest_document
 from app.db import get_document, delete_document, get_query
 
 app = FastAPI(
-    title="RetrievalLab",
+    title="RetrievalLab API",
+    description="Semantic Retrieval and RAG Backend for Technical Documentation",
     version="0.1.0",
 )
 
