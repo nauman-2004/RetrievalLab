@@ -14,6 +14,17 @@ Built with **FastAPI**, **PostgreSQL**, **pgvector**, **Sentence Transformers**,
 
 ---
 
+## 🎥 Demo
+
+Watch a short walkthrough of RetrievalLab:
+
+[RetrievalLab Demo](https://youtu.be/232aA0TygJk)
+
+Or watch directly:
+https://youtu.be/232aA0TygJk
+
+---
+
 ## Overview
 
 RetrievalLab is a backend service that ingests technical documents, converts them into semantic vector embeddings, stores them in PostgreSQL using pgvector, and answers user questions through Retrieval-Augmented Generation (RAG).
